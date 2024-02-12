@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome Message</title>
+</head>
+<body>
+<button id="shareButton">Share Welcome Message</button>
+
+<script>
+document.getElementById("shareButton").addEventListener("click", function() {
+
+
+
+    var LinkeShare = "https://localhost:7203/WheelFortune";
+     
+
+     var Messege = "مرحبا بالجميع!";
+  
+
+
+ var sharewhatsapp = "whatsapp://send?text=" + Messege + "     \n     " + LinkeShare+"#" + Math.floor(Math.random() * 11000);
+    
+
+ window.location.href = sharewhatsapp;
+});
+</script>
+</body>
+</html>
